@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 37, Failures: 6, Errors: 0, Skipped: 30, Time elapsed: 153.793 s <<< FAILURE! - in TestSuite
+launchGoogle(com.pinelabs.RnD.WebUITest.GoogleDemoTest)  Time elapsed: 27.976 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "com.pinelabs.RnD.WebUI.CommonUtilsWebUI.SQLDatabaseUtility.con" is null
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchGoogle(GoogleDemoTest.java:59)
+
+launchpcui(com.pinelabs.RnD.WebUITest.GoogleDemoTest)  Time elapsed: 61.767 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@src='Captcha.aspx'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchpcui(GoogleDemoTest.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //img[@src='Captcha.aspx']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchpcui(GoogleDemoTest.java:72)
+
+searchGoogle(com.pinelabs.RnD.WebUITest.GoogleDemoTest)  Time elapsed: 14.86 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467
+*** Element info: {Using=xpath, value=//input[@title='Search']}
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.searchGoogle(GoogleDemoTest.java:65)
+
+generate(com.pinelabs.RnD.WebUITest.GoogleDemoTest)  Time elapsed: 27.007 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.generate(GoogleDemoTest.java:77)
+
+initiation(com.pinelabs.RnD.AndroidTest.IrisAppTest)  Time elapsed: 57.37 s  <<< FAILURE!
+com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.100.127:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: Connect timed out}}]
+	at com.pinelabs.RnD.AndroidTest.IrisAppTest.initiation(IrisAppTest.java:26)
+
+getInstances(com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest)  Time elapsed: 0.067 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/openqa/selenium/remote/AcceptedW3CCapabilityKeys
+	at com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest.getInstances(PaymentsUPIValidationsTest.java:31)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.AcceptedW3CCapabilityKeys
+	at com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest.getInstances(PaymentsUPIValidationsTest.java:31)
+

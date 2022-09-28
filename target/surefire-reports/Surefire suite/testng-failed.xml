@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="com.pinelabs.RnD.AndroidTest.TestUtils">
+        <methods>
+          <include name="getInstances"/>
+        </methods>
+      </class> <!-- com.pinelabs.RnD.AndroidTest.TestUtils -->
+      <class name="com.pinelabs.RnD.AndroidTest.IrisAppTest">
+        <methods>
+          <include name="getMasterData"/>
+          <include name="validateRadioButtons"/>
+          <include name="initiation"/>
+          <include name="validateTextBoxes"/>
+        </methods>
+      </class> <!-- com.pinelabs.RnD.AndroidTest.IrisAppTest -->
+      <class name="com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest">
+        <methods>
+          <include name="iCICI_UPI_011"/>
+          <include name="iCICI_UPI_030"/>
+          <include name="iCICI_UPI_013"/>
+          <include name="iCICI_UPI_010"/>
+          <include name="iCICI_UPI_019"/>
+          <include name="iCICI_UPI_016"/>
+          <include name="iCICI_UPI_015"/>
+          <include name="iCICI_UPI_017"/>
+          <include name="iCICI_UPI_014"/>
+          <include name="getInstances"/>
+          <include name="iCICI_UPI_001"/>
+          <include name="iCICI_UPI_023"/>
+          <include name="iCICI_UPI_022"/>
+          <include name="iCICI_UPI_002"/>
+          <include name="iCICI_UPI_024"/>
+          <include name="iCICI_UPI_005a"/>
+          <include name="iCICI_UPI_020"/>
+          <include name="iCICI_UPI_005"/>
+          <include name="iCICI_UPI_027"/>
+          <include name="iCICI_UPI_029"/>
+          <include name="iCICI_UPI_004"/>
+          <include name="iCICI_UPI_026"/>
+          <include name="iCICI_UPI_005b"/>
+          <include name="iCICI_UPI_028"/>
+          <include name="iCICI_UPI_003"/>
+          <include name="iCICI_UPI_025"/>
+          <include name="iCICI_UPI_012"/>
+        </methods>
+      </class> <!-- com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest -->
+      <class name="com.pinelabs.RnD.WebUITest.GoogleDemoTest">
+        <methods>
+          <include name="extents"/>
+          <include name="generate"/>
+          <include name="searchGoogle"/>
+          <include name="m2"/>
+          <include name="launchGoogle"/>
+          <include name="getInstances"/>
+          <include name="launchpcui"/>
+          <include name="setMethodAndClassDetails"/>
+        </methods>
+      </class> <!-- com.pinelabs.RnD.WebUITest.GoogleDemoTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

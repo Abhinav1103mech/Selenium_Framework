@@ -1,0 +1,13 @@
+{
+  "firstName": "Vanshika",
+  "lastName": "Chauhan",
+  "address": [
+    {
+      "street": "abc",
+      "city": "Delhi",
+      "state": "New Delhi"
+    }
+
+  ],
+  "name" : "Singh"
+}

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="34" passed="1" failed="4" skipped="29">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-31T17:48:58Z" name="Surefire suite" finished-at="2022-03-31T17:51:29Z" duration-ms="150646">
+    <groups>
+    </groups>
+    <test started-at="2022-03-31T17:48:58Z" name="Surefire test" finished-at="2022-03-31T17:51:29Z" duration-ms="150646">
+      <class name="com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest">
+        <test-method is-config="true" signature="getInstances()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="getInstances" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/openqa/selenium/remote/AcceptedW3CCapabilityKeys]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/openqa/selenium/remote/AcceptedW3CCapabilityKeys
+	at io.appium.java_client.remote.NewAppiumSessionPayload.<clinit>(NewAppiumSessionPayload.java:98)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:175)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:95)
+	at com.pinelabs.RnD.AndroidUI.Base.AppiumUtilities.setUpConnection(AppiumUtilities.java:120)
+	at com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest.getInstances(PaymentsUPIValidationsTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.remote.AcceptedW3CCapabilityKeys
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 45 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInstances -->
+        <test-method signature="iCICI_UPI_001()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_001" description="Validate the E2E UPI transaction through Payments App" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_001 -->
+        <test-method signature="iCICI_UPI_003()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_003" description="Verify the ICICI UPI &quot;GetStatus- Last&quot; Transaction." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_003 -->
+        <test-method signature="iCICI_UPI_002()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_002" description="Verify the ICICI UPI &quot;Charge&quot; Transaction." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_002 -->
+        <test-method signature="iCICI_UPI_004()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_004" description="Verify the ICICI UPI &quot;GetStatus- Any&quot; Transaction." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_004 -->
+        <test-method signature="iCICI_UPI_005()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_005" description="Verify the ICICI_UPI &quot;GetStatus&quot; Transaction with incorrect Batch ID." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_005 -->
+        <test-method signature="iCICI_UPI_005a()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_005a" description="Verify the ICICI_UPI &quot;GetStatus&quot; Transaction with incorrect ROC ID." finished-at="2022-03-31T23:21:29Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_005a -->
+        <test-method signature="iCICI_UPI_010()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_010" description="Perform ICICI UPI Transactions (4-Sale, 1-Void and 1-Reversal) and try to do batch settlement." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_010 -->
+        <test-method signature="iCICI_UPI_005b()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_005b" description="Verify the ICICI_UPI &quot;GetStatus&quot; Transaction with incorrect Batch ID and ROC ID." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_005b -->
+        <test-method signature="iCICI_UPI_013()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_013" description="Perform ICICI UPI Transaction (4-Sale, 1-Void and 1-Reversal) after that try to Generate Reports - Curr. Batch Summary after " finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_013 -->
+        <test-method signature="iCICI_UPI_012()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_012" description="Generate &quot;Reprint - Any&quot; transaction chargeslip after successful ICICI_UPI transaction." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_012 -->
+        <test-method signature="iCICI_UPI_011()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_011" description="Generate &quot;Reprint-Last&quot; transaction chargeslip after successful ICICI_UPI transaction." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_011 -->
+        <test-method signature="iCICI_UPI_014()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_014" description="Perform ICICI UPI Transaction (4-Sale, 1-Void and 1-Reversal) after that try to Generate  &quot;Reports - Batch Detail Summary&quot;" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_014 -->
+        <test-method signature="iCICI_UPI_015()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_015" description="Perform ICICI UPI Transaction (4-Sale, 1-Void and 1-Reversal) After that Settle Batch, then try to Generate Reports - Last Batch Summary " finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_015 -->
+        <test-method signature="iCICI_UPI_019()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_019" description="Verify the ICICI UPI Sale Transaction when Host is unavailable/Not responding." finished-at="2022-03-31T23:21:29Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_019 -->
+        <test-method signature="iCICI_UPI_016()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_016" description="Perform ICICI UPI Sale Transaction with QR code display time out  when successful payment done after time out." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_016 -->
+        <test-method signature="iCICI_UPI_017()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_017" description="Perform ICICI UPI Sale Transaction with QR code display time out when payment not done after time out." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_017 -->
+        <test-method signature="iCICI_UPI_023()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_023" description="Verify the ICICI UPI Transaction and Time out occurred and payment done." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_023 -->
+        <test-method signature="iCICI_UPI_020()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_020" description="verify ICICI UPI settlement when only reversal in a batch" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_020 -->
+        <test-method signature="iCICI_UPI_022()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_022" description="Verify the ICICI UPI Transaction and call back not received in certian time and auto&quot; Get status&quot; has been called." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_022 -->
+        <test-method signature="iCICI_UPI_025()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_025" description="Verify the ICICI UPI settlement when only void in a batch." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_025 -->
+        <test-method signature="iCICI_UPI_026()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_026" description="Verify the ICICI UPI settlement when only void Reversal in a batch." finished-at="2022-03-31T23:21:29Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_026 -->
+        <test-method signature="iCICI_UPI_024()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_024" description="Verify the ICICI UPI Transaction and Time out occurred and payment not done." finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_024 -->
+        <test-method signature="iCICI_UPI_028()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_028" description="Validate the void in UPI transaction for already void ROC ID" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_028 -->
+        <test-method signature="iCICI_UPI_029()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_029" description="Validate the reprint receipt of last void UPI transaction  " finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_029 -->
+        <test-method signature="iCICI_UPI_027()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_027" description="Verify the ICICI UPI settlement when ICICI UPI host is not availabale/Not responding" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_027 -->
+        <test-method signature="iCICI_UPI_030()[pri:0, instance:com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest@7e9131d5]" started-at="2022-03-31T23:21:29Z" name="iCICI_UPI_030" description="Validate the reprint receipt of last void UPI transaction  " finished-at="2022-03-31T23:21:29Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iCICI_UPI_030 -->
+      </class> <!-- com.pinelabs.RnD.AndroidTest.PaymentsUPIValidationsTest -->
+      <class name="com.pinelabs.RnD.AndroidTest.IrisAppTest">
+        <test-method is-config="true" signature="initiation()[pri:0, instance:com.pinelabs.RnD.AndroidTest.IrisAppTest@2cdd0d4b]" started-at="2022-03-31T23:20:58Z" name="initiation" finished-at="2022-03-31T23:20:58Z" duration-ms="0" status="FAIL">
+          <exception class="com.mongodb.MongoTimeoutException">
+            <message>
+              <![CDATA[Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.100.127:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: Connect timed out}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.100.127:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: Connect timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:182)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:150)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:102)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:282)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:186)
+	at com.mongodb.client.internal.MongoIterableImpl.execute(MongoIterableImpl.java:143)
+	at com.mongodb.client.internal.MongoIterableImpl.iterator(MongoIterableImpl.java:92)
+	at com.mongodb.client.internal.MappingIterable.iterator(MappingIterable.java:39)
+	at com.pinelabs.RnD.CommonUtils.CommonUtils.dbValidation(CommonUtils.java:69)
+	at com.pinelabs.RnD.CommonUtils.CommonUtils.findCollectionFromDb(CommonUtils.java:79)
+	at com.pinelabs.RnD.CommonUtils.CommonUtils.findRowBasedOnColumn(CommonUtils.java:85)
+	at com.pinelabs.RnD.AndroidTest.IrisAppTest.initiation(IrisAppTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.mongodb.MongoTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiation -->
+        <test-method signature="validateTextBoxes()[pri:0, instance:com.pinelabs.RnD.AndroidTest.IrisAppTest@2cdd0d4b]" started-at="2022-03-31T23:21:29Z" name="validateTextBoxes" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTextBoxes -->
+        <test-method signature="validateRadioButtons()[pri:0, instance:com.pinelabs.RnD.AndroidTest.IrisAppTest@2cdd0d4b]" started-at="2022-03-31T23:21:29Z" name="validateRadioButtons" finished-at="2022-03-31T23:21:29Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRadioButtons -->
+        <test-method signature="getMasterData()[pri:0, instance:com.pinelabs.RnD.AndroidTest.IrisAppTest@2cdd0d4b]" started-at="2022-03-31T23:21:29Z" name="getMasterData" finished-at="2022-03-31T23:21:29Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMasterData -->
+      </class> <!-- com.pinelabs.RnD.AndroidTest.IrisAppTest -->
+      <class name="com.pinelabs.RnD.WebUITest.GoogleDemoTest">
+        <test-method is-config="true" signature="extents()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:57Z" name="extents" finished-at="2022-03-31T23:18:58Z" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extents -->
+        <test-method is-config="true" signature="getInstances()[pri:0, instance:com.pinelabs.RnD.AndroidTest.TestUtils@78ffe6dc]" started-at="2022-03-31T23:18:58Z" name="getInstances" finished-at="2022-03-31T23:18:58Z" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInstances -->
+        <test-method is-config="true" signature="getInstances()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:58Z" name="getInstances" finished-at="2022-03-31T23:18:58Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInstances -->
+        <test-method is-config="true" signature="setMethodAndClassDetails(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:58Z" name="setMethodAndClassDetails" finished-at="2022-03-31T23:18:58Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinelabs.RnD.WebUITest.GoogleDemoTest.fetchJsonData()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b251fb9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodAndClassDetails -->
+        <test-method signature="fetchJsonData()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:58Z" name="fetchJsonData" description="Checking JSON utility" finished-at="2022-03-31T23:18:58Z" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchJsonData -->
+        <test-method is-config="true" signature="generate(org.testng.ITestResult)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:58Z" name="generate" finished-at="2022-03-31T23:18:59Z" duration-ms="801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fetchJsonData status=SUCCESS method=GoogleDemoTest.fetchJsonData()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate -->
+        <test-method signature="launchGoogle()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:59Z" name="launchGoogle" description="This test is to Launch google.com" finished-at="2022-03-31T23:19:27Z" duration-ms="27964" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.Connection.createStatement()" because "com.pinelabs.RnD.WebUI.CommonUtilsWebUI.SQLDatabaseUtility.con" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.Connection.createStatement()" because "com.pinelabs.RnD.WebUI.CommonUtilsWebUI.SQLDatabaseUtility.con" is null
+	at com.pinelabs.RnD.WebUI.CommonUtilsWebUI.SQLDatabaseUtility.executeSelectquery(SQLDatabaseUtility.java:46)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchGoogle(GoogleDemoTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchGoogle -->
+        <test-method is-config="true" signature="setMethodAndClassDetails(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:18:59Z" name="setMethodAndClassDetails" finished-at="2022-03-31T23:18:59Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchGoogle()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b251fb9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodAndClassDetails -->
+        <test-method is-config="true" signature="generate(org.testng.ITestResult)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:19:27Z" name="generate" finished-at="2022-03-31T23:19:29Z" duration-ms="2323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchGoogle status=FAILURE method=GoogleDemoTest.launchGoogle()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate -->
+        <test-method is-config="true" signature="setMethodAndClassDetails(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:19:29Z" name="setMethodAndClassDetails" finished-at="2022-03-31T23:19:29Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchpcui()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b251fb9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodAndClassDetails -->
+        <test-method signature="launchpcui()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:19:29Z" name="launchpcui" description="abc" finished-at="2022-03-31T23:20:31Z" duration-ms="61763" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //img[@src='Captcha.aspx'] (tried for 10 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //img[@src='Captcha.aspx'] (tried for 10 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.pinelabs.RnD.WebUI.Base.SeleniumUtilities.getElement(SeleniumUtilities.java:505)
+	at com.pinelabs.RnD.WebUI.POM.GoogleDemoPage.captchatxt(GoogleDemoPage.java:30)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.launchpcui(GoogleDemoTest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //img[@src='Captcha.aspx']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchpcui -->
+        <test-method is-config="true" signature="generate(org.testng.ITestResult)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:20:31Z" name="generate" finished-at="2022-03-31T23:20:31Z" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=launchpcui status=FAILURE method=GoogleDemoTest.launchpcui()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate -->
+        <test-method signature="m2()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:20:31Z" name="m2" data-provider="NewData" finished-at="2022-03-31T23:20:31Z" duration-ms="0" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoClassDefFoundError: org/apache/commons/io/output/UnsynchronizedByteArrayOutputStream
+	at com.pinelabs.RnD.WebUI.CommonUtilsWebUI.ExcelUtility.launchWorkbook(ExcelUtility.java:147)
+	at com.pinelabs.RnD.WebUI.CommonUtilsWebUI.ExcelUtility.excelFileReading(ExcelUtility.java:202)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.checkExcelUtil(GoogleDemoTest.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+	... 25 more
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method is-config="true" signature="setMethodAndClassDetails(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:20:31Z" name="setMethodAndClassDetails" finished-at="2022-03-31T23:20:31Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinelabs.RnD.WebUITest.GoogleDemoTest.searchGoogle()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b251fb9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setMethodAndClassDetails -->
+        <test-method signature="searchGoogle()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:20:31Z" name="searchGoogle" description="This test is to Searching for stephan Hawkins" finished-at="2022-03-31T23:20:46Z" duration-ms="14811" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467
+*** Element info: {Using=xpath, value=//input[@title='Search']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467
+*** Element info: {Using=xpath, value=//input[@title='Search']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:477)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.pinelabs.RnD.WebUI.Base.SeleniumUtilities.getElement(SeleniumUtilities.java:505)
+	at com.pinelabs.RnD.WebUI.Base.SeleniumUtilities.clickOnElement(SeleniumUtilities.java:232)
+	at com.pinelabs.RnD.WebUI.POM.GoogleDemoPage.searchText(GoogleDemoPage.java:25)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.searchGoogle(GoogleDemoTest.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGoogle -->
+        <test-method is-config="true" signature="generate(org.testng.ITestResult)[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba]" started-at="2022-03-31T23:20:46Z" name="generate" finished-at="2022-03-31T23:20:46Z" duration-ms="0" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchGoogle status=FAILURE method=GoogleDemoTest.searchGoogle()[pri:0, instance:com.pinelabs.RnD.WebUITest.GoogleDemoTest@2e1d27ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=99.0.4844.82)
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'PINENOIL12364', ip: '172.17.112.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\HIMANS~1.SIS\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:54369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 708a9b61087e2405d751eb21e09be467
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
+	at com.pinelabs.RnD.WebUI.Base.SeleniumUtilities.getScreenshot(SeleniumUtilities.java:150)
+	at com.pinelabs.RnD.WebUI.CommonUtilsWebUI.ExtentSparkReport.generateReport(ExtentSparkReport.java:69)
+	at com.pinelabs.RnD.WebUITest.GoogleDemoTest.generate(GoogleDemoTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate -->
+      </class> <!-- com.pinelabs.RnD.WebUITest.GoogleDemoTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
